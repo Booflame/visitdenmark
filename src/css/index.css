@@ -7,6 +7,38 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root{
+  --colorMain-corporateRed: #e70013;
+  --colorMain-corporateBlue: #022b52;
+  --colorMain-black: #000000;
+  --colorMain-vdGrey1: #a1abad;
+  --colorMain-vdGrey2: #ced2d3;
+  --colorMain-white: #ffff;
+
+  --colorAccent-darkBlue: #00587a;
+  --colorAccent-darkGreen: #007554;
+  --colorAccent-darkYellow: #dba200;
+  --colorAccent-lightBlue: #c3ebff;
+  --colorAccent-lightGreen: #a3eabf;
+  --colorAccent-lightYellow: #ffe882;
+  --colorAccent-burgundy: #9a0035;
+  --colorAccent-pink: #fac5cc;
+
+  --colorGradient-base: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.2) 50%);
+  --colorGradient-corporateBlue: linear-gradient(90deg, rgba(2,43,82,1) 0%, rgba(0,0,0,0.2) 50%);
+  --colorGradient-corporateRed: linear-gradient(90deg, rgba(223,4,31,1) 0%, rgba(0,0,0,0.2) 50%);
+  --colorGradient-vdGrey1: linear-gradient(90deg, rgba(186,186,186,1) 0%, rgba(0,0,0,0.2) 50%);
+  --colorGradient-vdGrey2: linear-gradient(90deg, rgba(216,215,214,1) 0%, rgba(0,0,0,0.2) 50%);
+  --colorGradient-darkBlue: linear-gradient(90deg, rgba(32,85,110,1) 0%, rgba(0,0,0,0.2) 50%);
+  --colorGradient-darkGreen: linear-gradient(90deg, rgba(48,102,72,1) 0%, rgba(0,0,0,0.2) 50%);
+  --colorGradient-darkYellow: linear-gradient(90deg, rgba(193,142,0,1) 0%, rgba(0,0,0,0.2) 50%);
+  --colorGradient-lightBlue: linear-gradient(90deg, rgba(171,216,232,1) 0%, rgba(0,0,0,0.2) 50%);
+  --colorGradient-lightGreen: linear-gradient(90deg, rgba(173,224,191,1) 0%, rgba(0,0,0,0.2) 50%);
+  --colorGradient-lightYellow: linear-gradient(90deg, rgba(240,205,135,1) 0%, rgba(0,0,0,0.2) 50%);
+  --colorGradient-burgundy: linear-gradient(90deg, rgba(121,27,56,1) 0%, rgba(0,0,0,0.2) 50%);
+  --colorGradient-pink: linear-gradient(90deg, rgba(216,153,170,1) 0%, rgba(0,0,0,0.2) 50%);   
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
