@@ -41,6 +41,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+#root {
+  display: flex;
+  background-color: var(--colorMain-vdGrey2);
+}
+
 .item-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

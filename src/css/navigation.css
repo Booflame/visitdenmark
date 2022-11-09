@@ -1,0 +1,17 @@
+.primary-nav {
+  background-color: var(--colorAccent-lightBlue);
+}
+.primary-nav ul {
+  margin-block-start: 4rem;
+  margin-inline: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.primary-nav ul li {
+  list-style-type: none;
+}
+
+.primary-nav a {
+  color: var(--colorMain-black);
+}
