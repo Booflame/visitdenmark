@@ -1,12 +1,15 @@
 .primary-nav {
-  background-color: var(--colorAccent-lightBlue);
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 .primary-nav ul {
-  margin-block-start: 4rem;
-  margin-inline: 3rem;
+  justify-content: center;
   display: flex;
-  flex-direction: column;
   gap: 2rem;
+  margin: 2em;
 }
 .primary-nav ul li {
   list-style-type: none;
