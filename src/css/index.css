@@ -1,6 +1,8 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -22,32 +24,107 @@ body {
   --colorAccent-burgundy: #9a0035;
   --colorAccent-pink: #fac5cc;
 
-  --colorGradient-base: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.2) 50%);
-  --colorGradient-corporateBlue: linear-gradient(90deg, rgba(2, 43, 82, 1) 0%, rgba(0, 0, 0, 0.2) 50%);
-  --colorGradient-corporateRed: linear-gradient(90deg, rgba(223, 4, 31, 1) 0%, rgba(0, 0, 0, 0.2) 50%);
-  --colorGradient-vdGrey1: linear-gradient(90deg, rgba(186, 186, 186, 1) 0%, rgba(0, 0, 0, 0.2) 50%);
-  --colorGradient-vdGrey2: linear-gradient(90deg, rgba(216, 215, 214, 1) 0%, rgba(0, 0, 0, 0.2) 50%);
-  --colorGradient-darkBlue: linear-gradient(90deg, rgba(32, 85, 110, 1) 0%, rgba(0, 0, 0, 0.2) 50%);
-  --colorGradient-darkGreen: linear-gradient(90deg, rgba(48, 102, 72, 1) 0%, rgba(0, 0, 0, 0.2) 50%);
-  --colorGradient-darkYellow: linear-gradient(90deg, rgba(193, 142, 0, 1) 0%, rgba(0, 0, 0, 0.2) 50%);
-  --colorGradient-lightBlue: linear-gradient(90deg, rgba(171, 216, 232, 1) 0%, rgba(0, 0, 0, 0.2) 50%);
-  --colorGradient-lightGreen: linear-gradient(90deg, rgba(173, 224, 191, 1) 0%, rgba(0, 0, 0, 0.2) 50%);
-  --colorGradient-lightYellow: linear-gradient(90deg, rgba(240, 205, 135, 1) 0%, rgba(0, 0, 0, 0.2) 50%);
-  --colorGradient-burgundy: linear-gradient(90deg, rgba(121, 27, 56, 1) 0%, rgba(0, 0, 0, 0.2) 50%);
-  --colorGradient-pink: linear-gradient(90deg, rgba(216, 153, 170, 1) 0%, rgba(0, 0, 0, 0.2) 50%);
+  --colorGradient-base: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%
+  );
+  --colorGradient-corporateBlue: linear-gradient(
+    90deg,
+    rgba(2, 43, 82, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%
+  );
+  --colorGradient-corporateRed: linear-gradient(
+    90deg,
+    rgba(223, 4, 31, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%
+  );
+  --colorGradient-vdGrey1: linear-gradient(
+    90deg,
+    rgba(186, 186, 186, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%
+  );
+  --colorGradient-vdGrey2: linear-gradient(
+    90deg,
+    rgba(216, 215, 214, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%
+  );
+  --colorGradient-darkBlue: linear-gradient(
+    90deg,
+    rgba(32, 85, 110, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%
+  );
+  --colorGradient-darkGreen: linear-gradient(
+    90deg,
+    rgba(48, 102, 72, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%
+  );
+  --colorGradient-darkYellow: linear-gradient(
+    90deg,
+    rgba(193, 142, 0, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%
+  );
+  --colorGradient-lightBlue: linear-gradient(
+    90deg,
+    rgba(171, 216, 232, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%
+  );
+  --colorGradient-lightGreen: linear-gradient(
+    90deg,
+    rgba(173, 224, 191, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%
+  );
+  --colorGradient-lightYellow: linear-gradient(
+    90deg,
+    rgba(240, 205, 135, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%
+  );
+  --colorGradient-burgundy: linear-gradient(
+    90deg,
+    rgba(121, 27, 56, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%
+  );
+  --colorGradient-pink: linear-gradient(
+    90deg,
+    rgba(216, 153, 170, 1) 0%,
+    rgba(0, 0, 0, 0.2) 50%
+  );
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-#root {
-  display: flex;
-  background-color: var(--colorMain-vdGrey2);
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .item-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+}
+
+h1 {
+  padding: 2em;
+  text-align: center;
+}
+
+.item-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.kategorier {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2em;
+  font-size: 1.5em;
+}
+
+.kategori-btn {
+  cursor: pointer;
+  width: 15em;
+  text-align: left;
+  background-color: white;
+  padding: 0.3em;
 }
