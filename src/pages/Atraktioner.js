@@ -21,7 +21,7 @@ export default function Atraktioner() {
         </NavLink>
 
         <NavLink className="nav-link" to="/">
-          <button className="kategori-btn">Kust</button>
+          <button className="kategori-btn">Kunst</button>
         </NavLink>
 
         <NavLink className="nav-link" to="/">
