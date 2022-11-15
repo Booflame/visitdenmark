@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Item from "./Item";
 
-export default function Places()
+export default function Places({category})
 {
     const[items, setItems] = useState([]);
 
@@ -13,25 +13,27 @@ export default function Places()
             const response = await fetch(url);
             const data = await response.json();
             const filterList = []
+            const id = category;
 
             for (let i = 0; i < data.length; i++){
                 const item = data[i]
 
-                if(data[i].Category.Id === 63 || data[i].Category.Id === 64) {
+                // eslint-disable-next-line
+                if(data[i].Category.Id == id) {
                     filterList.push(item)
                 }
             }
+            console.log(data)
             console.log(filterList)
             
             setItems(filterList);
         }
         getPlaces();
 
-    }, []);
+    }, [category]);
 
     return(
     <>
-        <h2>Places To Eat</h2>
         <div className='item-container'>
             {items.map((item, index) => (
                 <Item index={index} place={item} key={item.id} />

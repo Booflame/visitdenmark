@@ -26,7 +26,7 @@ export default function Navigation() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/Restauranter">
+          <NavLink to="/Spise">
             <img className="restaurantericon" src={restauranticon} alt="" />
           </NavLink>
         </li>

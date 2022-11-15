@@ -4,6 +4,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 100;
 }
 .primary-nav ul {
   justify-content: center;
@@ -17,4 +18,7 @@
 
 .primary-nav a {
   color: var(--colorMain-black);
+}
+#root:has(.primary-nav) {
+  margin-bottom: 140px;
 }
